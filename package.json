@@ -1,8 +1,8 @@
 {
-  "name": "aiva",
+  "name": "AIbooking.dk",
   "version": "0.3.0",
   "private": true,
-  "description": "AIVA — open-source AI voice agent & AI receptionist: answers calls 24/7, books appointments, takes orders and speaks 8+ languages. Built with Claude, Twilio and Next.js.",
+  "description": "AIbooking.dk — open-source AI voice agent & AI receptionist: answers calls 24/7, books appointments, takes orders and speaks 8+ languages. Built with Claude, Twilio and Next.js.",
   "keywords": [
     "ai-receptionist",
     "voice-agent",
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/7XLabs/aiva.git"
+    "url": "https://github.com/MagnoraMarketing/AI-Receptionist---All-in-one.git"
   },
   "license": "MIT",
   "scripts": {
