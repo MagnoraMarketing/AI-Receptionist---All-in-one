@@ -40,7 +40,7 @@ export default function DashboardOverview() {
     <div>
       <h1 className="text-2xl font-bold">Overview</h1>
       <p className="mt-1 text-sm text-slate-400">
-        Live activity across your AIVA lines. Try the{" "}
+        Live activity across your AIbooking.dk lines. Try the{" "}
         <Link href="/demo" className="text-brand-400 hover:underline">demo</Link>{" "}
         and watch bookings appear here.
       </p>
@@ -111,7 +111,7 @@ export default function DashboardOverview() {
       <div className="mt-4 space-y-3">
         {recentCalls.length === 0 && (
           <div className="card text-sm text-slate-400">
-            No calls yet. Point a Twilio number at AIVA, or use the web demo to
+            No calls yet. Point a Twilio number at AIbooking.dk, or use the web demo to
             simulate a conversation.
           </div>
         )}
