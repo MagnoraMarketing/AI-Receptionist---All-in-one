@@ -63,7 +63,7 @@ export async function POST(req: NextRequest) {
   const firstName = known.name?.split(" ")[0];
   const defaultGreeting =
     business.greeting?.replace("{name}", business.name) ??
-    `Thank you for calling ${business.name}. This is AIVA, your virtual assistant. How can I help you today?`;
+    `Thank you for calling ${business.name}. This is AIbooking.dk, your virtual assistant. How can I help you today?`;
   const greeting = firstName
     ? greetingFor(lang, business.name, firstName)
     : defaultGreeting;
@@ -77,14 +77,14 @@ export async function POST(req: NextRequest) {
 // Localized welcome-back greetings (name-aware).
 function greetingFor(lang: string, businessName: string, name: string): string {
   const greetings: Record<string, string> = {
-    en: `Welcome back to ${businessName}, ${name}! This is AIVA. How can I help you today?`,
-    hi: `${businessName} में आपका फिर से स्वागत है, ${name} जी! मैं AIVA हूँ। मैं आपकी कैसे मदद कर सकती हूँ?`,
-    es: `¡Bienvenido de nuevo a ${businessName}, ${name}! Soy AIVA. ¿En qué puedo ayudarle hoy?`,
-    fr: `Bon retour chez ${businessName}, ${name} ! C'est AIVA. Comment puis-je vous aider ?`,
-    de: `Willkommen zurück bei ${businessName}, ${name}! Hier ist AIVA. Wie kann ich helfen?`,
-    it: `Bentornato da ${businessName}, ${name}! Sono AIVA. Come posso aiutarla?`,
-    pt: `Bem-vindo de volta a ${businessName}, ${name}! Aqui é a AIVA. Como posso ajudar?`,
-    ja: `${businessName}へおかえりなさい、${name}様。AIVAです。ご用件をどうぞ。`,
+    en: `Welcome back to ${businessName}, ${name}! This is AIbooking.dk. How can I help you today?`,
+    hi: `${businessName} में आपका फिर से स्वागत है, ${name} जी! मैं AIbooking.dk हूँ। मैं आपकी कैसे मदद कर सकती हूँ?`,
+    es: `¡Bienvenido de nuevo a ${businessName}, ${name}! Soy AIbooking.dk. ¿En qué puedo ayudarle hoy?`,
+    fr: `Bon retour chez ${businessName}, ${name} ! C'est AIbooking.dk. Comment puis-je vous aider ?`,
+    de: `Willkommen zurück bei ${businessName}, ${name}! Hier ist AIbooking.dk. Wie kann ich helfen?`,
+    it: `Bentornato da ${businessName}, ${name}! Sono AIbooking.dk. Come posso aiutarla?`,
+    pt: `Bem-vindo de volta a ${businessName}, ${name}! Aqui é a AIbooking.dk. Como posso ajudar?`,
+    ja: `${businessName}へおかえりなさい、${name}様。AIbooking.dkです。ご用件をどうぞ。`,
   };
   return greetings[getLanguage(lang).code] ?? greetings.en;
 }
