@@ -1,8 +1,7 @@
 # Frequently Asked Questions
 
-### Is AIVA free?
-The code is MIT-licensed and self-hostable. You pay only your own Anthropic
-API usage and Twilio telephony costs.
+### Is AIbooking.dk free?
+No
 
 ### Do I need Twilio to try it?
 No. The `/demo` page runs the exact same agent brain in your browser using
@@ -19,11 +18,11 @@ whole configuration), or edit `lib/seed.ts` / use the dashboard Knowledge
 editor.
 
 ### Can callers cancel or reschedule themselves?
-Yes — AIVA looks up bookings by the caller's number, confirms which one they
+Yes — AIbooking.dk looks up bookings by the caller's number, confirms which one they
 mean, and cancels or moves it. Cancellations automatically notify the first
 waitlisted caller by SMS.
 
-### What happens when AIVA can't help?
+### What happens when AIbooking.dk can't help?
 It transfers to your staff line (`staffPhone`) or logs a callback request
 that appears in the dashboard's Action items.
 
@@ -37,7 +36,7 @@ Orders are validated server-side against the live menu. Items that don't
 match are rejected back to the agent, which clarifies with the caller —
 nothing is silently priced at $0.
 
-### Does AIVA hallucinate bookings?
+### Does AIbooking.dk hallucinate bookings?
 The prompt forbids claiming success without a tool result, and every tool
-result is server-verified. If the API is down, AIVA says so and offers a
+result is server-verified. If the API is down, AIbooking.dk says so and offers a
 transfer instead of pretending.
