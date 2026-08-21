@@ -223,10 +223,10 @@ export default function DemoPage() {
         <div className="relative mb-10 text-center">
           <p className="eyebrow">Live demo</p>
           <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight md:text-5xl">
-            Talk to AIVA.
+            Talk to AIbooking.dk.
           </h1>
           <p className="mt-3 text-slate-400">
-            Pick a business, then speak or type — AIVA handles the rest.
+            Pick a business, then speak or type — AIbooking.dk handles the rest.
           </p>
         </div>
 
@@ -300,11 +300,11 @@ export default function DemoPage() {
                       }`}
                     >
                       {thinking
-                        ? "AIVA is thinking…"
+                        ? "AIbooking.dk is thinking…"
                         : listening
                         ? "Listening to you…"
                         : turns.length > 0
-                        ? "● On call with AIVA"
+                        ? "● On call with AIbooking.dk"
                         : "Ready to answer"}
                     </div>
                   </div>
@@ -410,7 +410,7 @@ export default function DemoPage() {
               <Link href="/dashboard" className="text-brand-400 hover:underline">
                 dashboard
               </Link>
-              {" "}— hang up to see AIVA&apos;s post-call analysis.
+              {" "}— hang up to see AIbooking.dk&apos;s post-call analysis.
             </p>
             <button
               onClick={() => {
