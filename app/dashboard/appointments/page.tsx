@@ -62,7 +62,7 @@ export default function AppointmentsPage() {
     const url = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
     const el = document.createElement("a");
     el.href = url;
-    el.download = `aiva-appointments-${new Date().toISOString().slice(0, 10)}.csv`;
+    el.download = `AIbooking.dk-appointments-${new Date().toISOString().slice(0, 10)}.csv`;
     el.click();
     URL.revokeObjectURL(url);
   }
@@ -73,7 +73,7 @@ export default function AppointmentsPage() {
         <div>
           <h1 className="text-2xl font-bold">Appointments</h1>
           <p className="mt-1 text-sm text-slate-400">
-            Bookings made by AIVA on your behalf.
+            Bookings made by AIbooking.dk on your behalf.
           </p>
         </div>
         <div className="flex gap-2">
