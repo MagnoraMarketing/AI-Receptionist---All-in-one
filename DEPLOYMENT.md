@@ -1,4 +1,4 @@
-# Deploying AIVA
+# Deploying AIbooking.dk
 
 ## 1. Deploy the app
 
@@ -16,7 +16,7 @@ Set these environment variables in your Vercel project (or `.env.local` for self
 | `ANTHROPIC_API_KEY` | Claude API key — powers the conversation brain |
 | `TWILIO_ACCOUNT_SID` | Twilio account SID |
 | `TWILIO_AUTH_TOKEN` | Twilio auth token |
-| `TWILIO_PHONE_NUMBER` | Your AIVA phone number |
+| `TWILIO_PHONE_NUMBER` | Your AIbooking.dk phone number |
 | `NEXT_PUBLIC_APP_URL` | Public URL of the deployment |
 
 > Note: the bundled JSON file store is for demos. On serverless hosts the filesystem is ephemeral — swap `lib/db.ts` for Postgres/Redis before production use.
@@ -41,7 +41,7 @@ https://YOUR_DOMAIN/api/voice/status
 This finalizes calls when callers hang up without saying goodbye, so every
 call gets transcript analysis.
 
-4. Call the number. AIVA answers.
+4. Call the number. AIbooking.dk answers.
 
 > With `TWILIO_AUTH_TOKEN` set, all voice webhooks validate the
 > `X-Twilio-Signature` header — requests not signed by Twilio get a 403.
