@@ -4,24 +4,24 @@ import { useState } from "react";
 
 const FAQS = [
   {
-    q: "How is AIVA different from an IVR or phone tree?",
-    a: "There are no menus and no 'press 1'. AIVA holds a natural conversation, understands context, switches languages mid-call, and actually completes tasks — booking, ordering, answering — instead of routing you around.",
+    q: "How is AIbooking.dk different from an IVR or phone tree?",
+    a: "There are no menus and no 'press 1'. AIbooking.dk holds a natural conversation, understands context, switches languages mid-call, and actually completes tasks — booking, ordering, answering — instead of routing you around.",
   },
   {
-    q: "What happens when AIVA can't handle a call?",
+    q: "What happens when AIbooking.dk can't handle a call?",
     a: "It transfers to your staff with full context, or logs a callback request as an action item in your dashboard. No caller ever hits a dead end.",
   },
   {
     q: "How long does setup take?",
-    a: "Minutes. Describe your business in plain English on the onboarding page and AIVA generates its own configuration — services, FAQs, menu, languages. Point your Twilio number at it and you're live.",
+    a: "Minutes. Describe your business in plain English on the onboarding page and AIbooking.dk generates its own configuration — services, FAQs, menu, languages. Point your Twilio number at it and you're live.",
   },
   {
-    q: "Which languages does AIVA speak?",
+    q: "Which languages does AIbooking.dk speak?",
     a: "English, Hindi, Spanish, French, German, Italian, Portuguese and Japanese today — and it detects the caller's language automatically, mid-sentence.",
   },
   {
     q: "Do I keep my existing phone number?",
-    a: "Yes. Forward your existing number to AIVA, or port it. Callers never know anything changed — except that someone finally answers.",
+    a: "Yes. Forward your existing number to AIbooking.dk, or port it. Callers never know anything changed — except that someone finally answers.",
   },
 ];
 
