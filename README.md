@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📞 AIVA — Open-Source AI Voice Agent & AI Receptionist
+# 📞 AIbooking.dk AI Voice Agent & AI Receptionist
 
 **An AI phone receptionist / virtual receptionist that answers calls 24/7, books appointments, takes restaurant orders, answers FAQs, and speaks 8+ languages — built with Claude, Twilio Voice and Next.js.**
 
@@ -16,11 +16,11 @@
 
 ---
 
-## What is AIVA?
+## What is AIbooking.dk?
 
-AIVA is a complete, self-hostable **AI voice agent** (think: AI answering service / AI front desk) for small businesses — **clinics, salons, restaurants and hotels**. A caller dials your number; AIVA answers in under a second, holds a natural conversation in the caller's language, and actually *finishes the job*: it books the appointment, takes the order, answers the question, or hands off to a human with full context.
+AIbooking.dk is a complete, self-hostable **AI voice agent** (think: AI answering service / AI front desk) for small businesses — **clinics, salons, restaurants and hotels**. A caller dials your number; AIbooking.dk answers in under a second, holds a natural conversation in the caller's language, and actually *finishes the job*: it books the appointment, takes the order, answers the question, or hands off to a human with full context.
 
-Unlike a phone tree or IVR, there are no menus. Unlike most "AI receptionist" SaaS products, AIVA is open source, runs on your own infrastructure, and **configures itself from a plain-English description of your business**.
+Unlike a phone tree or IVR, there are no menus. Unlike most "AI receptionist" SaaS products, AIbooking.dk is open source, runs on your own infrastructure, and **configures itself from a plain-English description of your business**.
 
 ## ✨ Features
 
@@ -38,11 +38,11 @@ Unlike a phone tree or IVR, there are no menus. Unlike most "AI receptionist" Sa
 | ✅ **Action item queue** | Callback requests and follow-ups become a live staff task list |
 | 💬 **SMS layer** | Instant booking confirmations + a cron-able next-day reminder engine with dedup |
 | 📈 **Analytics dashboard** | Automation rate, sentiment, intents, languages, peak hours, upsell radar |
-| 🛠️ **Live knowledge editing** | Change services/FAQs in the dashboard; AIVA knows on the very next call |
+| 🛠️ **Live knowledge editing** | Change services/FAQs in the dashboard; AIbooking.dk knows on the very next call |
 
-## 🆚 AIVA vs the alternatives
+## 🆚 AIbooking.dk vs the alternatives
 
-| | AIVA | Traditional IVR | Human answering service | Voicemail |
+| | AIbooking.dk | Traditional IVR | Human answering service | Voicemail |
 |---|---|---|---|---|
 | Answers instantly, 24/7 | ✅ | ✅ | ⚠️ business hours | ✅ |
 | Natural conversation | ✅ | ❌ press 1… | ✅ | ❌ |
@@ -55,8 +55,8 @@ Unlike a phone tree or IVR, there are no menus. Unlike most "AI receptionist" Sa
 ## 🚀 Quick start
 
 ```bash
-git clone https://github.com/7XLabs/aiva.git
-cd aiva
+git clone https://github.com/MagnoraMarketing/AI-Receptionist---All-in-one.git
+cd AIbooking.dk
 npm install
 cp .env.example .env.local   # add your ANTHROPIC_API_KEY
 npm run dev
@@ -66,7 +66,7 @@ Open http://localhost:3000 — then:
 
 - **/** — product landing page
 - **/onboard** — describe your business, get a working receptionist
-- **/demo** — talk to AIVA in your browser (mic or keyboard); hang up to see post-call intelligence
+- **/demo** — talk to AIbooking.dk in your browser (mic or keyboard); hang up to see post-call intelligence
 - **/dashboard** — calls, appointments, orders, action items, analytics, knowledge editor
 
 To connect a real phone number, see [DEPLOYMENT.md](DEPLOYMENT.md).
@@ -144,10 +144,3 @@ npm run eval      # live agent behavior evals (needs ANTHROPIC_API_KEY)
 
 CI runs typecheck, tests and build on every push.
 
-## 🤝 Contributing
-
-PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## 📄 License
-
-[MIT](LICENSE) © 7XLabs
