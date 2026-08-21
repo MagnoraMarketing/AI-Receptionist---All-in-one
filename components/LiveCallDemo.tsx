@@ -4,18 +4,18 @@ import { useEffect, useRef, useState } from "react";
 import Waveform from "./Waveform";
 
 interface Step {
-  role: "caller" | "aiva" | "event";
+  role: "caller" | "AIbooking.dk" | "event";
   text: string;
   pause: number; // ms before this step appears
 }
 
-// A scripted call that plays on loop in the hero — shows exactly what AIVA
+// A scripted call that plays on loop in the hero — shows exactly what AIbooking.dk
 // does (multilingual booking) without the visitor doing anything.
 const SCRIPT: Step[] = [
   { role: "caller", text: "Hi! Do you have a table for two tonight?", pause: 1100 },
-  { role: "aiva", text: "Of course! We have 7:30 or 9:00 free this evening — which works better?", pause: 1600 },
+  { role: "AIbooking.dk", text: "Of course! We have 7:30 or 9:00 free this evening — which works better?", pause: 1600 },
   { role: "caller", text: "7:30 please. Also… ¿tienen opciones veganas?", pause: 1800 },
-  { role: "aiva", text: "¡Sí! Tenemos pizza vegana y pasta al pomodoro. Your table for two at 7:30 is confirmed 🎉", pause: 1900 },
+  { role: "AIbooking.dk", text: "¡Sí! Tenemos pizza vegana y pasta al pomodoro. Your table for two at 7:30 is confirmed 🎉", pause: 1900 },
   { role: "event", text: "📅 Booked · Table for 2 · 19:30 · SMS confirmation sent", pause: 1400 },
 ];
 
@@ -40,7 +40,7 @@ export default function LiveCallDemo() {
         return;
       }
       const s = SCRIPT[step];
-      const showTyping = s.role === "aiva";
+      const showTyping = s.role === "AIbooking.dk";
       if (showTyping) setTyping(true);
       timer = setTimeout(() => {
         if (cancelled) return;
@@ -78,7 +78,7 @@ export default function LiveCallDemo() {
             </div>
             <div>
               <div className="text-sm font-semibold">Bella Notte Trattoria</div>
-              <div className="text-xs text-emerald-400">● Live call · AIVA answering</div>
+              <div className="text-xs text-emerald-400">● Live call · AIbooking.dk answering</div>
             </div>
           </div>
           <Waveform />
